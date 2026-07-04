@@ -1,0 +1,30 @@
+{
+  "name": "watsonx-research-companion",
+  "version": "0.1.0",
+  "description": "IBM watsonx.ai-powered agentic research companion MCP server",
+  "type": "module",
+  "bin": {
+    "watsonx-research-companion": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/server.js",
+    "dev": "tsc --watch"
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
